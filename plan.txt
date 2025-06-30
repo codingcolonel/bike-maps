@@ -1,0 +1,16 @@
+TO-DO
+-Set up gradle multi project
+
+Using Canada cycling data
+-Find fastest routes with A-Star alogrithm
+-Report certain routes
+-Assess comfort levels using a points system
+    -Must be above a certain threshold and include no major routes
+-Recommended destinations/routes
+-Time estimate based on distance and elevation
+-Biking fact/statistics of cities
+
+Route
+start coords 
+end coords 
+point value
