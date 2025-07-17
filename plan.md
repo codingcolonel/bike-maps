@@ -14,6 +14,7 @@ Using Canada cycling data
   - Must be above a certain threshold and include no major routes
   - Finds best route considering distance, elevation, safety, dedicated routes using weighing system
     - Finds best overall, safest, fastest routes
+    - USe STRM elevation raster for elevation
 - Recommended destinations/routes
 - Time estimate based on distance and elevation
 - Crosswalk/stairs/other hazards
