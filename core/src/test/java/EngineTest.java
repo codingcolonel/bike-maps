@@ -4,14 +4,14 @@
 
 import org.junit.jupiter.api.Test;
 
-import engine.gpx.Engine;
+import engine.gpx.GPXReader;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class EngineTest {
     @Test
     void engineHasAGreeting() {
-        Engine classUnderTest = new Engine();
+        GPXReader classUnderTest = new GPXReader();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
     }
 }

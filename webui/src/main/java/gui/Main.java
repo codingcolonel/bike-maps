@@ -3,10 +3,10 @@
  */
 package gui;
 
-import engine.gpx.Engine;
+import engine.gpx.GPXReader;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(new Engine().getGreeting());
+        System.out.println("Hello World");
     }
 }
