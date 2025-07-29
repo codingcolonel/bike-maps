@@ -7,6 +7,8 @@ import engine.gpx.GPXReader;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello World");
+        GPXReader gpxReader = new GPXReader(
+                "C:\\Users\\ethan\\Desktop\\java\\bike-maps\\data\\gpx-routes\\13717222076.gpx");
+        gpxReader.read();
     }
 }

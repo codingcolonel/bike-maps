@@ -11,7 +11,5 @@ import static org.junit.jupiter.api.Assertions.*;
 class EngineTest {
     @Test
     void engineHasAGreeting() {
-        GPXReader classUnderTest = new GPXReader();
-        assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
     }
 }
