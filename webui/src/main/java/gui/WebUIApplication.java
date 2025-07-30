@@ -3,10 +3,16 @@
  */
 package gui;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 import engine.gpx.GPXReader;
 
-public class Main {
+@SpringBootApplication
+public class WebUIApplication {
     public static void main(String[] args) {
+        SpringApplication.run(WebUIApplication.class, args);
+
         GPXReader gpxReader = new GPXReader(
                 "C:\\Users\\ethan\\Desktop\\java\\bike-maps\\data\\gpx-routes\\13717222076.gpx");
         gpxReader.read();

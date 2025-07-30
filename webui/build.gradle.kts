@@ -8,6 +8,10 @@
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     application
+
+    // Spring boot plugin
+    id("org.springframework.boot") version "3.2.12"
+    id("io.spring.dependency-management") version "1.1.0"
 }
 
 repositories {
@@ -25,6 +29,9 @@ dependencies {
     implementation(libs.guava)
 
     implementation(project(":core"))
+
+    // Spring web dependency
+    implementation("org.springframework.boot:spring-boot-starter-web")
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
@@ -36,7 +43,7 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass.set("gui.Main")
+    mainClass.set("gui.WebUIApplication")
 }
 
 tasks.named<Test>("test") {
