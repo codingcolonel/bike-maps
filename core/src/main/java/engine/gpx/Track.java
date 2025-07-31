@@ -15,4 +15,8 @@ public class Track {
     public void addCoordinate(Coordinate coordinate) {
         coordinates.add(coordinate);
     }
+
+    public ArrayList<Coordinate> getCoordinates() {
+        return coordinates;
+    }
 }

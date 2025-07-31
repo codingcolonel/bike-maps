@@ -3,9 +3,10 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution: "© OpenStreetMap contributors",
 }).addTo(map);
 
-let num = 5;
+// Fetch coordinate data from a track in the data folder
+let file = "13746599585.gpx";
 
-const url = `/api/number?num=${num}`;
+const url = `/api/track?file=${file}`;
 
 fetch(url)
   .then((response) => response.text())
