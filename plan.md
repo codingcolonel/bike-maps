@@ -2,7 +2,8 @@ TO-DO
 
 - Set up gradle multi project - done
 - Basic map using leaflet - done
-- Make GPX parser and integrate it with map
+- Make GPX parser and integrate it with map - done
+- Be able to draw routes manually
 - Create graph representation of road segements using intersections as seperators
   - Assign cycling data to segments to be used in A-star later
 
@@ -25,6 +26,7 @@ Design feature
 - Route draws itself
 - Biking fact/statistics of cities
 - Elevation map layer
+- Path changes color based on safety
 
 Classes
 Route

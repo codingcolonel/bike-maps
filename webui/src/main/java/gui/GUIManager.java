@@ -3,6 +3,8 @@ package gui;
 import org.springframework.web.bind.annotation.*;
 
 import engine.gpx.*;
+import engine.map.Track;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -12,6 +14,7 @@ public class GUIManager {
     GPXReader gpxReader;
 
     public GUIManager() {
+        gpxReader = new GPXReader();
     }
 
     // Test function
@@ -25,8 +28,8 @@ public class GUIManager {
     @GetMapping("/track")
     public Track getTrack(@RequestParam String file) {
         String path = "../data/gpx-routes/" + file;
-        gpxReader = new GPXReader(path);
+        gpxReader.setPath(path);
         return gpxReader.read();
     }
-
+    
 }

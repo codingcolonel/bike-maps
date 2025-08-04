@@ -1,4 +1,4 @@
-package engine.gpx;
+package engine.map;
 
 import java.util.ArrayList;
 

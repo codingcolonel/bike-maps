@@ -1,4 +1,4 @@
-package engine.gpx;
+package engine.map;
 
 /*
  * A set of coordinates; contains a latitude and a longitude

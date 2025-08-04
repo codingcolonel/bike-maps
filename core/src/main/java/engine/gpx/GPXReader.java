@@ -7,17 +7,30 @@ import javax.xml.parsers.*;
 import org.w3c.dom.*;
 import org.xml.sax.SAXException;
 
+import engine.map.Coordinate;
+import engine.map.Track;
+
 /*
  * Manages the reading of data from GPX files; contains the File object of the source GPX file
  */
 public class GPXReader {
     private File file;
 
-    // EFFECTS: initializes reader to read from source file
+    // EFFECTS: initializes reader to read from source file at given path
     public GPXReader(String path) {
         this.file = new File(path);
     }
 
+    // EFFECTS: initializes reader without a path
+    public GPXReader() {
+    }
+
+    // Sets path for file to be read
+    public void setPath(String path) {
+        this.file = new File(path);
+    }
+
+    // REQUIRES: file is set and valid
     // EFFECTS: parses GPX file and then creates a new Track
     public Track read() {
         try {
@@ -27,7 +40,7 @@ public class GPXReader {
             return readTrackPoints(doc);
         } catch (ParserConfigurationException | SAXException | IOException e) {
             throw new RuntimeException(e);
-        } 
+        }
     }
 
     // EFFECTS: parses track points into Coordinate objects for Track
