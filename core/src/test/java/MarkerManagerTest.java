@@ -8,8 +8,8 @@ import engine.gpx.GPXReader;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class EngineTest {
+class MarkerManagerTest {
     @Test
-    void engineHasAGreeting() {
+    void addMarkerTest() {
     }
 }
