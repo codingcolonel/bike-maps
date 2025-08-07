@@ -4,7 +4,7 @@
 
 import org.junit.jupiter.api.Test;
 
-import engine.gpx.GPXReader;
+import engine.parsing.GPXReader;
 
 import static org.junit.jupiter.api.Assertions.*;
 

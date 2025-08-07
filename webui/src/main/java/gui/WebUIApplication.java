@@ -6,7 +6,7 @@ package gui;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import engine.gpx.GPXReader;
+import engine.parsing.GPXReader;
 
 @SpringBootApplication
 public class WebUIApplication {

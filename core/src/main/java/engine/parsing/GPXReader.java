@@ -1,4 +1,4 @@
-package engine.gpx;
+package engine.parsing;
 
 import java.io.File;
 import java.io.IOException;
@@ -13,27 +13,17 @@ import engine.map.Track;
 /*
  * Manages the reading of data from GPX files; contains the File object of the source GPX file
  */
-public class GPXReader {
-    private File file;
+public class GPXReader extends Reader {
 
-    // EFFECTS: initializes reader to read from source file at given path
     public GPXReader(String path) {
-        this.file = new File(path);
+        super(path);
     }
 
-    // EFFECTS: initializes reader without a path
-    public GPXReader() {
-    }
-
-    // Sets path for file to be read
-    public void setPath(String path) {
-        this.file = new File(path);
-    }
-
-    // REQUIRES: file is set and valid
+    // REQUIRES: file path is valid
     // EFFECTS: parses GPX file and then creates a new Track
     public Track read() {
         try {
+            File file = new File(path);
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = factory.newDocumentBuilder();
             Document doc = builder.parse(file);

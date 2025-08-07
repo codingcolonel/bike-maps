@@ -4,10 +4,10 @@ import java.util.List;
 
 import org.springframework.web.bind.annotation.*;
 
-import engine.gpx.*;
 import engine.map.Coordinate;
 import engine.map.MarkerManager;
 import engine.map.Track;
+import engine.parsing.*;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
